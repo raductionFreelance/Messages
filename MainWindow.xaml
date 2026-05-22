@@ -1,0 +1,21 @@
+﻿<Window x:Class="MessagesClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Клієнт Сповіщень" Height="500" Width="600">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,15">
+            <TextBlock Text="Тип підписки (н-р, IT, HR, Sales):" VerticalAlignment="Center" Margin="0,0,10,0" FontSize="14"/>
+            <TextBox x:Name="TxtSubscription" Width="150" Padding="5" FontSize="14" Text="IT"/>
+            <Button x:Name="BtnConnect" Content="🔌 Підключитися" Margin="10,0,0,0" Padding="10,5" Click="BtnConnect_Click" FontSize="14"/>
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Background="#F9F9F9" Padding="5">
+            <StackPanel x:Name="MessagesPanel"/>
+        </ScrollViewer>
+    </Grid>
+</Window>
