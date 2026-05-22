@@ -1,0 +1,20 @@
+﻿<Window x:Class="MessegesServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MessegesServer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="37,48,0,0" TextWrapping="Wrap" Text="Title:" VerticalAlignment="Top" Height="41" Width="161" FontSize="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="143,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" FontSize="26" x:Name="titleTextBox"/>
+        <TextBlock HorizontalAlignment="Left" Margin="37,132,0,0" TextWrapping="Wrap" Text="Type:" VerticalAlignment="Top" Height="41" Width="161" FontSize="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="143,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" FontSize="26" x:Name="typeTextBox" Height="39"/>
+        <Button Content="Send" HorizontalAlignment="Left" Margin="22,379,0,0" VerticalAlignment="Top" Height="45" Width="176" FontSize="26" Click="Send"/>
+        <TextBlock HorizontalAlignment="Left" Margin="37,215,0,0" TextWrapping="Wrap" Text="Content:" VerticalAlignment="Top" Height="41" Width="161" FontSize="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="143,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" FontSize="26" x:Name="contentTextBox" Height="111"/>
+        <TextBlock HorizontalAlignment="Left" Margin="597,50,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="167" Width="154" FontSize="22" x:Name="logTextBlock"/>
+
+    </Grid>
+</Window>
